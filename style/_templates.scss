@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Italiana&family=Kalnia:wght@100..700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/5dd039d5b7942caa5edb325265ba72d1?family=Nympha+Trial);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font_nympha: "Nympha Trial";
+$font_italiana: "Italiana", sans-serif;
+$font_display: "Noto Sans Display", sans-serif;
+$font_kalnia: "Kalnia", serif;
+$font_mono: "DM Mono", monospace;
+$color_text_nav: rgb(242, 242, 242);
+$color_text_white: rgb(255, 255, 255);
+$color_text_name: rgb(214, 208, 206);
+$color_text_editirial: rgba(141, 141, 141, 1);
+
+%nav_text {
+  font-family: $font_display;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color_text_nav;
+}
+
+%first_title {
+  font-family: $font_nympha;
+  font-size: 220px;
+  font-weight: 400;
+  color: $color_text_white;
+}
+
+%job_position {
+  font-family: $font_mono;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color_text_name;
+  opacity: 0.7;
+}
+
+%name_post {
+  font-family: $font_nympha;
+  font-size: 24px;
+  font-weight: 400;
+  color: $color_text_name;
+}
+
+%text_rotation {
+  font-family: $font_nympha;
+  font-size: 260px;
+  font-weight: 400;
+  color: rgba(16, 16, 16, 1);
+  -webkit-text-stroke: $color_text_editirial 1px;
+}
+
+@mixin flex($display, $direction, $wrap, $justify) {
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}

@@ -1,0 +1,26 @@
+header {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(16, 16, 16, 1);
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    nav {
+      margin: 0 auto;
+      padding-top: 54px;
+      max-width: 1240px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 235px;
+      a {
+        text-decoration: none;
+        @extend %nav_text;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

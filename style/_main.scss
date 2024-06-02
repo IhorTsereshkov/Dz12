@@ -1,0 +1,189 @@
+main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(16, 16, 16, 1);
+  .container_main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    .first_title {
+      position: relative;
+      z-index: 2;
+      @extend %first_title;
+      text-align: center;
+    }
+    .imgfirst {
+      display: block;
+      position: relative;
+      z-index: 1;
+      max-width: 1268px;
+      width: 100%;
+      max-height: 844px;
+      margin: 0 auto;
+      margin-top: -130px;
+      margin-bottom: 93px;
+    }
+    .info_team {
+      max-width: 584px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 249px;
+      @include flex(flex, row, flex-wrap, space-between);
+      .director {
+        @include flex(flex, column, flex-wrap, space-between);
+        align-items: center;
+        row-gap: 8px;
+        .job_position {
+          @extend %job_position;
+          text-transform: uppercase;
+        }
+        .name_post {
+          @extend %name_post;
+        }
+      }
+    }
+    .imgsecond {
+      display: block;
+      max-width: 1115px;
+      width: 100%;
+      padding-left: 86px;
+      margin-bottom: 100px;
+    }
+    .editorial_two_people {
+      margin-bottom: 207px;
+      p {
+        position: relative;
+        z-index: 1;
+        @extend %first_title;
+        text-align: center;
+        color: $color_text_editirial;
+      }
+      .imgthird {
+        display: block;
+        position: relative;
+        z-index: 2;
+        max-width: 1349px;
+        width: 100%;
+        max-height: 844px;
+        padding-left: 320px;
+        margin-top: -155px;
+        margin-bottom: 93px;
+      }
+    }
+    .img4 {
+      display: block;
+      padding-left: 86px;
+      max-width: 1115px;
+      width: 100%;
+      margin-bottom: 310px;
+    }
+    .three_pictures {
+      position: relative;
+      margin: 0 86px;
+      min-height: 2070px;
+      margin-bottom: 510px;
+      .img5 {
+        max-width: 576px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .img6 {
+        max-width: 576px;
+        width: 100%;
+        position: absolute;
+        top: 543px;
+        left: 0px;
+      }
+      .img7 {
+        max-width: 576px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        right: 60px;
+      }
+    }
+    .box_rotation {
+      position: relative;
+      width: 100%;
+      margin-bottom: 570px;
+      @include flex(flex, column, flex-wrap, space-between);
+      .text_rotation {
+        @extend %text_rotation;
+        text-align: center;
+        line-height: 290px;
+      }
+      .text_oppacity {
+        @extend %text_rotation;
+        color: $color_text_white;
+        text-align: center;
+      }
+      .img8 {
+        max-width: 566px;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 430px;
+        transform: rotate(6deg);
+      }
+      .img9 {
+        max-height: 850px;
+        position: absolute;
+        top: -10px;
+        right: -5px;
+      }
+    }
+    .next_project {
+      max-width: 1400px;
+      width: 100%;
+      min-height: 600px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 120px;
+      .next {
+        color: $color_text_white;
+        font-family: $font_nympha;
+        font-size: 154px;
+        font-weight: 400px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+      }
+      .footerimg {
+        max-width: 411px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+      .footerimg1 {
+        max-width: 356px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 9%;
+        left: 16%;
+        transform: rotate(6deg);
+        opacity: 40%;
+      }
+      .footerimg2 {
+        max-width: 356px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 57%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
